@@ -46,6 +46,11 @@
     height: 40%;
 }
 
-.search {
+.filter {
     padding: 10px;
+}
+
+.filter-btn {
+    margin: 10px;
+    cursor: pointer;
 }
