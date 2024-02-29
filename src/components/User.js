@@ -19,12 +19,12 @@ const User = () => {
     const data = await fetch("https://api.github.com/users/kostubhgarg");
 
     const json = await data.json();
-    console.log(json);
+   
     setUserInfo(json);
   };
 
   return (
-    <div className="user-card">
+    <div className="user-card p-4 m-4 bg-gray-100 rounded-lg w-64">
       <img src={userInfo.avatar_url} alt="Profile Pic" />
       <h2>Name: {userInfo.name}</h2>
       <h4>{userInfo.bio}</h4>
