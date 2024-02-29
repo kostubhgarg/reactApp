@@ -3,7 +3,10 @@ import { useEffect, useState } from "react";
 const User = () => {
   const dummyInfo = {
     name: "Koshu",
+    bio:"Developer",
+    company:"-",
     location: "Cheeka",
+    contact:"Github"
   };
 
   const [userInfo, setUserInfo] = useState(dummyInfo);
@@ -22,7 +25,7 @@ const User = () => {
 
   return (
     <div className="user-card">
-      <img src={userInfo.avatar_url} alt="Profile" />
+      <img src={userInfo.avatar_url} alt="Profile Pic" />
       <h2>Name: {userInfo.name}</h2>
       <h4>{userInfo.bio}</h4>
       <h3>Company: {userInfo.company}</h3>
