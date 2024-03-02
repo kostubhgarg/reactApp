@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
 import RestaurantCard from "./RestaurantCard";
 import Shimmmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import { SWIGGY_API } from "../utils/constants";
 import useOnlineStatus from "../utils/useOfflineStatus";
+import UserContext from "../utils/UserContext";
 
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
@@ -36,6 +37,8 @@ const Body = () => {
   if (onlineStatus === false)
     return <h1>You are offline, Please check your internet connection!</h1>;
 
+  const { loggedInUser, setUserName } = useContext(UserContext);
+
   return listOfRestaurants.length === 0 ? (
     <Shimmmer />
   ) : (
@@ -44,7 +47,7 @@ const Body = () => {
         <div className="search m-4 p-4">
           <input
             type="text"
-            className="search-box border border-solid border-black"
+            className="search-box border border-solid border-black p-1 rounded-lg"
             value={searchText}
             onChange={(e) => {
               setSearchText(e.target.value);
@@ -64,7 +67,7 @@ const Body = () => {
         </div>
         <div className="m-4 p-4 flex items-center">
           <button
-            className="filter-btn px-4 py-2 bg-gray-50 rounded-lg" 
+            className="filter-btn px-4 py-2 bg-gray-50 rounded-lg"
             onClick={() => {
               const filteredList = listOfRestaurants.filter(
                 (res) => res.info.avgRating > 4.2
@@ -74,6 +77,14 @@ const Body = () => {
           >
             Top rated restaurants
           </button>
+        </div>
+        <div className="m-4 p-4 flex items-center">
+          <label className="pr-2">UserName : </label>
+          <input
+            className="border border-black p-1 rounded-lg"
+            value={loggedInUser}
+            onChange={(e) => setUserName(e.target.value)}
+          />
         </div>
       </div>
       <div className="res-container flex flex-wrap">
