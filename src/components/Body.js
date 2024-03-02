@@ -39,7 +39,7 @@ const Body = () => {
 
   const { loggedInUser, setUserName } = useContext(UserContext);
 
-  return listOfRestaurants.length === 0 ? (
+  return !listOfRestaurants || listOfRestaurants.length === 0 ? (
     <Shimmmer />
   ) : (
     <div className="body">
@@ -47,6 +47,7 @@ const Body = () => {
         <div className="search m-4 p-4">
           <input
             type="text"
+            data-testid = "searchInput"
             className="search-box border border-solid border-black p-1 rounded-lg"
             value={searchText}
             onChange={(e) => {

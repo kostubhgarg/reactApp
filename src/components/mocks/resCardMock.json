@@ -1,0 +1,74 @@
+{
+    "info": {
+        "id": "10820",
+        "name": "California Burrito",
+        "cloudinaryImageId": "b58sysfvskincfwmgoqd",
+        "locality": "Koramangala",
+        "areaName": "Koramangala",
+        "costForTwo": "₹250 for two",
+        "cuisines": [
+            "Mexican",
+            "American",
+            "Salads",
+            "Continental",
+            "Keto",
+            "Healthy Food"
+        ],
+        "avgRating": 4.6,
+        "parentId": "1252",
+        "avgRatingString": "4.6",
+        "totalRatingsString": "10K+",
+        "sla": {
+            "deliveryTime": 19,
+            "lastMileTravel": 1.4,
+            "serviceability": "SERVICEABLE",
+            "slaString": "15-20 mins",
+            "lastMileTravelString": "1.4 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-03-03 01:00:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "20% OFF",
+            "subHeader": "UPTO ₹50"
+        },
+        "orderabilityCommunication": {
+            "title": {},
+            "subTitle": {},
+            "message": {},
+            "customIcon": {}
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {
+        "context": "seo-data-41935953-379e-46a3-986e-a8c0c91972f0"
+    },
+    "cta": {
+        "link": "https://www.swiggy.com/restaurants/california-burrito-koramangala-bangalore-10820",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+}
